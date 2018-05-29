@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.css" media="screen">
     <link rel="stylesheet" href="./styles/main.css" media="screen">    
     <script src="./scripts/lib/csi.min.js"></script>
+    <script src="./scripts/clock.js"></script>
 </head>
 
 <body>
@@ -27,15 +28,16 @@
                             <li><a href="tests_final.html">Финален тест</a></li>
                         </ul>
                     </div>
-                    <div class="main-content">
+                    <div class="main-content" id="test-start-warning">
                         Време за решаване на теста - 10 минути. Започване?
-                        <button class="btn btn-primary">Започване</button>
+                        <button class="btn btn-primary" id="startTest" onclick="startCountDown()">Започване</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <div id="countdown"></div>
     <script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
     <script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script>
     <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
