@@ -1,6 +1,7 @@
 function startCountDown() { // Set the date we're counting down to
     document.getElementById("test-start-warning").style.display = 'none';
     document.getElementById("test").style.display = 'block';
+    document.getElementById("finishTestButton").style.display = 'block';
     var countDownDate = new Date().getTime() + 602000;
 
     // Update the count down every 1 second

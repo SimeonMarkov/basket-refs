@@ -31,3 +31,9 @@
     top: 200px;
     right: 200px;
 }
+
+#finishTestButton {
+    position: fixed;
+    top: 250px;
+    right: 200px;
+}
