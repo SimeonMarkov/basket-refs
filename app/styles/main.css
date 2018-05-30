@@ -1,6 +1,33 @@
 .main-content {
     padding-top: 90px;
 }
+
 .divider {
     background-color: slategray;
+}
+
+.pull-right {
+    position: sticky;
+    top: 0;
+    right: 500px;
+}
+
+#test {
+    position: relative;
+    left: 70px;
+    top: 70px;
+}
+
+.affix {
+    top:50px;
+    position: fixed;
+    width: 100%;
+    background-color:white;
+    z-index:777;
+}
+
+#countdown {
+    position: fixed;
+    top: 200px;
+    right: 200px;
 }
