@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/main.css" media="screen">
     <script src="./scripts/lib/csi.min.js"></script>
     <script src="./scripts/clock.js"></script>
+    <script src="./scripts/finish_test.js"></script>
 </head>
 
 <body>
@@ -40,10 +41,12 @@
 </div>
 
 <div id="test" class="pull-right" style="display: none">
+    <div id="testControl">
     <div id="countdown"></div>
     <button id="finishTestButton" class="btn btn-primary"
-            onclick="alert('Сигурен ли сте, че искате да приключите теста?')">Приключване
+            onclick="finishTest()">Приключване
     </button>
+    </div>
     <form>
         Въпрос 1<br>
         <input type="radio" name="question_1">a<br>

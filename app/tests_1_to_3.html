@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/main.css" media="screen">
     <script src="./scripts/lib/csi.min.js"></script>
     <script src="./scripts/clock.js"></script>
+    <script src="./scripts/finish_test.js"></script>
 </head>
 
 <body>
@@ -40,11 +41,13 @@
 </div>
 
 <div id="test" class="pull-right" style="display: none">
-    <div id="countdown"></div>
-    <button id="finishTestButton" class="btn btn-primary" onclick="alert('Сигурен ли сте, че искате да приключите теста?')">Приключване</button>
+    <div id="testControl">
+        <div id="countdown"></div>
+        <button id="finishTestButton" class="btn btn-primary" onclick="finishTest()">Приключване</button>
+    </div>
     <form>
         Въпрос 1<br>
-        <input type="radio" name="question_1">a<br>
+        <span class="glyphicon glyphicon-user blue" style="display: none">r34t3gthr</span><input type="radio" name="question_1">a<br>
         <input type="radio" name="question_1">b<br>
         <input type="radio" name="question_1">c<br>
         <input type="radio" name="question_1">d<br>
@@ -86,6 +89,7 @@
     </form>
 </div>
 <script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
+<script src="./resources/cookie.js" type="text/javascript"></script>
 <script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script>
 <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="https://bootswatch.com/_assets/js/custom.js"></script>
