@@ -2,6 +2,7 @@ var timeLeft;
 
 function startCountDown() { // Set the date we're counting down to
 
+    $(document).on("keydown", disableF5);
     document.getElementById("test-start-warning").style.display = 'none';
     document.getElementById("test").style.display = 'block';
     document.getElementById("finishTestButton").style.display = 'block';
@@ -22,11 +23,11 @@ function startCountDown() { // Set the date we're counting down to
 
         // Output the result in an element with id="demo"
         document.getElementById("countdown").innerHTML = minutes + "m " + seconds + "s ";
-        console.clear();
+
 
         // If the count down is over, write some text
         if (distance < 0) {
-            clearInterval(x);
+            clearInterval(timeLeft);
             document.getElementById("countdown").innerHTML = "";
             alert("Expired");
             showAnswers();
@@ -37,3 +38,5 @@ function startCountDown() { // Set the date we're counting down to
 function stopTime() {
     clearTimeout(timeLeft);
 }
+
+function disableF5(e) { if ((e.which || e.keyCode) == 116) e.preventDefault(); };
