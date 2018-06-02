@@ -1,12 +1,12 @@
 var timeLeft;
 
-function startCountDown() { // Set the date we're counting down to
+function startCountDown(time) { // Set the date we're counting down to
 
     $(document).on("keydown", disableF5);
     document.getElementById("test-start-warning").style.display = 'none';
     document.getElementById("test").style.display = 'block';
     document.getElementById("finishTestButton").style.display = 'block';
-    var countDownDate = new Date().getTime() + 602000;
+    var countDownDate = new Date().getTime() + time;
 
     // Update the count down every 1 second
     timeLeft = setInterval(function() {
