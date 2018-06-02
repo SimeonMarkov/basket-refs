@@ -45,42 +45,52 @@
         <div id="countdown"></div>
         <button id="finishTestButton" class="btn btn-primary" onclick="finishTest('./resources/answers_4_6.json')">Приключване</button>
     </div>
-    1. Колко състезатели точно трябва да са на игралното поле по време на игра за всеки отбор?<br>
-    <input type="radio" name="question_1" value="a">5<br>
-    <input type="radio" name="question_1" value="b">6<br>
-    <input type="radio" name="question_1" value="c">4<br>
-    2. При нараняване на състезател, съдиите:<br>
-    <input type="radio" name="question_2" value="a">задължително трябва да прекъснат играта<br>
-    <input type="radio" name="question_2" value="b">трябва да се въздържат от прекъсване на игра при "жива" топка, освен ако не трябва да се предпази наранен състезател<br>
-    <input type="radio" name="question_2" value="c">при никакви обстоятелства не трябва да прекъсват играта<br>
-    3. Треньорът трябва да представи списък с имената на участниците в срещата и капитана най-малко:<br>
-    <input type="radio" name="question_3" value="a">1 минута преди началото на срешата<br>
-    <input type="radio" name="question_3" value="b">5 минути преди началото на срещата<br>
-    <input type="radio" name="question_3" value="c">20 минути преди началото на срещата<br>
-    4. Топката има статут на "жива", когато:<br>
-    <input type="radio" name="question_4" value="a">по време на спорната топка напусне ръцете на старши съдията при подхвърлянет о й<br>
-    <input type="radio" name="question_4" value="b">при изпълнение на наказателен удар топката е на разположение на изпълнителя на наказател ния удар<br>
-    <input type="radio" name="question_4" value="c">при вкарване в игра отвън топката е на разположение на състезателя, който ще я вкара в игра<br>
-    <input type="radio" name="question_4" value="d">и трите отговора са верни<br>
-    5. Когато топката докосне съдията, се отсъжда:<br>
-    <input type="radio" name="question_5" value="a">зависи от това коя част от пода е докосвал съдията в момента на допир с топката<br>
-    <input type="radio" name="question_5" value="b">напускане на очертанията<br>
-    <input type="radio" name="question_5" value="c">нищо не се отсъжда - играта продължава<br>
-    6. При извършване на грешка при вкарване на топката алтернативно в игра отвън:<br>
-    <input type="radio" name="question_6" value="a">топката се предоставя за вкарване отвън на противниковия отбор, без да се сменя посоката на индикаторната стрелка<br>
-    <input type="radio" name="question_6" value="b">топката се предоставя за вкарване отвън на противниковия отбор и незабавно се сменя посоката на индикаторната стрелка<br>
-    <input type="radio" name="question_6" value="c">дава се възможност на отбора, извършил грешката, да преповтори вкарването на топката, като се сменя и посоката на индикаторната стрелка<br>
-    <input type="radio" name="question_6" value="d">дава се възможност на отбора, извършил грешката, да преповтори вкарването на топката, без да се сменя посоката на индикаторната стрелка<br>
-    7. За позволено докосване на топката се счита<br>
-    <input type="radio" name="question_7" value="a">умишлено избиване с юмрук<br>
-    <input type="radio" name="question_7" value="b">умишлено изритване на топката с крак<br>
-    <input type="radio" name="question_7" value="c">случайно съприкосновение с коя да е част от крака<br>
-    <input type="radio" name="question_7" value="d">блокиране с коя да е част от крака<br>
-    8. При желание за смяна от кой да е от отборите, тя трябва:<br>
-    <input type="radio" name="question_8" value="a">от треньора<br>
-    <input type="radio" name="question_8" value="b">от помощник-треньора<br>
-    <input type="radio" name="question_8" value="c">от капитана на отбора<br>
-    <input type="radio" name="question_8" value="d">да бъде поискана от играчам който ще влезе от скамейката<br>
+    1.При вкарване на топката в игра отвън от до момента атакуващия отбор в предното си поле и при 13 или по-малко секунди за атака:<br>
+    <input type="radio" name="question_1" value="a"> часовникът за 24 секунди се спира и се връща на 14 секунди<br>
+    <input type="radio" name="question_1" value="b"> часовникът за 24 секунди се спира, но не се връща на 24 секунди<br>
+    <input type="radio" name="question_1" value="c"> часовникът за 24 секунди се спира и се връща на 24 секунди<br><br>
+    2. Времеизмервачът пуска часовникът за игра, когато:<br>
+    <input type="radio" name="question_2" value="a">при изпълнение на “спорна топка” топката е редовно отплесната от един от скачащите състезатели<br>
+    <input type="radio" name="question_2" value="b">след пропуснат последен или единствен наказателен удар, където топаката се отбива в ринга и докосне състезател<br>
+    <input type="radio" name="question_2" value="c">при вкарване на топката в игра отвън тя докосне или е докосната от състезател в игралното поле.<br>
+    <input type="radio" name="question_2" value="d">и трите отговора са верни<br><br>
+    3. В протокола за дадена среща, лично нарушение на играч се отбелязва:<br>
+    <input type="radio" name="question_3" value="a">с буквата P без индекс за поредност на нарушението<br>
+    <input type="radio" name="question_3" value="b">с буквата D<br>
+    <input type="radio" name="question_3" value="c">с буквата P, като се вписва малък индекс долу вдясно за поредността на нарушението за дадения играч<br><br>
+    4. В протокола за дадена среща, отбелязан наказателен удар се означава<br>
+    <input type="radio" name="question_4" value="a">със запълнено кръгче<br>
+    <input type="radio" name="question_4" value="b">с диагонална чертичка,заедно с нанесен номер на играча, отбелязал наказателния удар, в съседното празно квадратче<br>
+    <input type="radio" name="question_4" value="c">със запълнено кръгче,заедно с нанесен номер на играча, отбелязал наказателния удар, в съседното празно квадратче<br><br>
+    5. За загуба на даден отбор се дават:<br>
+    <input type="radio" name="question_5" value="a">0 точки<br>
+    <input type="radio" name="question_5" value="b">1 точка<br>
+    <input type="radio" name="question_5" value="c">2 точки<br><br>
+    6. Ако отборите не са изиграли всичките си срещи и ако 2 или повече отбори имат еднакъв резултат от победи и загуби:<br>
+    <input type="radio" name="question_6" value="a">най-голямата голова разлика от всички играни срещи на тези отбори до този момент решава класирането<br>
+    <input type="radio" name="question_6" value="b">резултатът от директните двубои решава класирането<br>
+    <input type="radio" name="question_6" value="c">се играе бараж за определяне на това кой отбор да бъде по-напред в класирането<br><br>
+    7. Какъв тип нарушение се отсъжда с жеста от картинката:<br>
+    <img src="resources/gestures-53.jpg"><br>
+    <input type="radio" name="question_7" value="a">стандартно лично нарушение(в защита)<br>
+    <input type="radio" name="question_7" value="b">техническо нарушение<br>
+    <input type="radio" name="question_7" value="c">неспортсменско нарушение<br>
+    <input type="radio" name="question_7" value="d">нарушение в нападение<br><br>
+    8. Коя от посочените грешки се отсъжда с жеста от картинката:<br>
+    <img src="./resources/gestures-17.jpg"><br>
+    <input type="radio" name="question_8" value="a">двоен дрибъл<br>
+    <input type="radio" name="question_8" value="b">"крачки"<br>
+    <input type="radio" name="question_8" value="c">носена топка<br>
+    <input type="radio" name="question_8" value="d">върната топка<br><br>
+    9. Коя от посочените грешки се отсъжда от съдията във видеото:<br>
+    <video width="400" height="345" controls>
+        <source src="./resources/violation.mp4" type="video/mp4">
+    </video><br>
+    <input type="radio" name="question_9" value="a">двоен дрибъл<br>
+    <input type="radio" name="question_9" value="b">"крачки"<br>
+    <input type="radio" name="question_9" value="c">носена топка<br>
+    <input type="radio" name="question_9" value="d">върната топка<br><br>
+    <br>
 </div>
 <script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
 <script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script>
