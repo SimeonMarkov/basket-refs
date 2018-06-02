@@ -46,3 +46,11 @@
 .hidden {
     display: none
 }
+
+p.faq {
+    color: mediumspringgreen;
+}
+
+div.faq {
+    margin-bottom: 50px;
+}
