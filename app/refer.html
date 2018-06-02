@@ -3,9 +3,9 @@
 
 <head>
     <title>Рефери</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css" media="screen">
-    <link rel="stylesheet" href="./styles/main.css" media="screen">    
+    <link rel="stylesheet" href="./styles/main.css" media="screen">
     <script src="./scripts/lib/csi.min.js"></script>
     <script src="./scripts/lib/mustache.js"></script>
 </head>
@@ -14,26 +14,29 @@
     <div data-include="./templates/nav-bar.html"></div>
 
     <div id="data-list" class="main-content">
+        <a id="toggle-btn" target="blank" href="">Скрий/Покажи</a>
         {{#data}}
-            <div class="data-list-item">
-                <div class="data-list-header">{{name}} <span class="col-btn">xx</span></div>
-                <div class="data-list-items">
-                    {{#data}}
-                    <div class="data-list-item">
-                        <div class="data-list-header">{{name}}</div>
-                        <div class="data-list-items">
-                            {{#data}}
-                            <div class="data-list-item">
-                                <div class="data-list-header">{{name}}</div>
-                            </div>
-                            {{/data}}
+        <div class="data-list-item">
+            <h3 class="data-list-header">{{name}}</h3>
+            <div class="data-list-items">
+                {{#data}}
+                <div class="data-list-item">
+                    <h4 class="data-list-header">{{name}}</h4>
+                    <div class="data-list-items">
+                        {{#data}}
+                        <div class="data-list-item">
+                            <div class="data-list-header">{{name}}</div>
                         </div>
+                        {{/data}}
                     </div>
-                    {{/data}}
                 </div>
+                {{/data}}
             </div>
+        </div>
         {{/data}}
     </div>
+
+    <a href="./tests.html">Тестове</a>
 
     <script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
     <script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script>

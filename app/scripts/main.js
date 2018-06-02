@@ -42,7 +42,11 @@
     getData({}, renderData);
 
     $('.data-list-header').click(function () {
-        console.log('click');
         $(this).next().toggleClass('hidden');
+    });
+
+    $('#toggle-btn').click(function (ev) {
+        ev.preventDefault()
+        $('.data-list-items').toggleClass('hidden');
     });
 })();
