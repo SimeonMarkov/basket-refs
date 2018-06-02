@@ -41,6 +41,12 @@
 
 #data-list div {
     margin-left: 10px;
+    width: 600px;
+}
+
+.data-list-item {
+    padding-left: 30px;
+    margin-bottom: 20px;
 }
 
 .hidden {
