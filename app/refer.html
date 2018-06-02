@@ -13,7 +13,27 @@
 <body>
     <div data-include="./templates/nav-bar.html"></div>
 
-    <div id="data-list" class="main-content">{{#data}} Hello {{ name }} {{/data}}</div>
+    <div id="data-list" class="main-content">
+        {{#data}}
+            <div class="data-list-item">
+                <div class="data-list-header">{{name}} <span class="col-btn">xx</span></div>
+                <div class="data-list-items">
+                    {{#data}}
+                    <div class="data-list-item">
+                        <div class="data-list-header">{{name}}</div>
+                        <div class="data-list-items">
+                            {{#data}}
+                            <div class="data-list-item">
+                                <div class="data-list-header">{{name}}</div>
+                            </div>
+                            {{/data}}
+                        </div>
+                    </div>
+                    {{/data}}
+                </div>
+            </div>
+        {{/data}}
+    </div>
 
     <script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
     <script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script>
