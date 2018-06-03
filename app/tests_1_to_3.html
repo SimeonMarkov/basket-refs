@@ -43,50 +43,76 @@
 <div id="test" class="pull-right" style="display: none">
     <div id="testControl">
         <div id="countdown"></div>
-        <button id="finishTestButton" class="btn btn-primary" onclick="finishTest('./resources/answers_1_3.json')">Приключване</button>
+        <button id="finishTestButton" class="btn btn-primary" onclick="finishTest('./resources/answers_1_3.json')">
+            Приключване
+        </button>
     </div>
     <div id="test_result"></div>
-    1. Колко състезатели точно трябва да са на игралното поле по време на игра за всеки отбор?<br>
-    <input type="radio" name="question_1" value="a">5<br>
-    <input type="radio" name="question_1" value="b">6<br>
-    <input type="radio" name="question_1" value="c">4<br>
-    2. При нараняване на състезател, съдиите:<br>
-    <input type="radio" name="question_2" value="a">задължително трябва да прекъснат играта<br>
-    <input type="radio" name="question_2" value="b">трябва да се въздържат от прекъсване на игра при "жива" топка, освен ако не трябва да се предпази наранен състезател<br>
-    <input type="radio" name="question_2" value="c">при никакви обстоятелства не трябва да прекъсват играта<br>
-    3. Треньорът трябва да представи списък с имената на участниците в срещата и капитана най-малко:<br>
-    <input type="radio" name="question_3" value="a">1 минута преди началото на срещата<br>
-    <input type="radio" name="question_3" value="b">5 минути преди началото на срещата<br>
-    <input type="radio" name="question_3" value="c">20 минути преди началото на срещата<br>
-    4. Топката има статут на "жива", когато:<br>
-    <input type="radio" name="question_4" value="a">по време на спорната топка напусне ръцете на старши съдията при подхвърлянет о й<br>
-    <input type="radio" name="question_4" value="b">при изпълнение на наказателен удар топката е на разположение на изпълнителя на наказател ния удар<br>
-    <input type="radio" name="question_4" value="c">при вкарване в игра отвън топката е на разположение на състезателя, който ще я вкара в игра<br>
-    <input type="radio" name="question_4" value="d">и трите отговора са верни<br>
-    5. Когато топката докосне съдията, се отсъжда:<br>
-    <input type="radio" name="question_5" value="a">зависи от това коя част от пода е докосвал съдията в момента на допир с топката<br>
-    <input type="radio" name="question_5" value="b">напускане на очертанията<br>
-    <input type="radio" name="question_5" value="c">нищо не се отсъжда - играта продължава<br>
-    6. При извършване на грешка при вкарване на топката алтернативно в игра отвън:<br>
-    <input type="radio" name="question_6" value="a">топката се предоставя за вкарване отвън на противниковия отбор, без да се сменя посоката на индикаторната стрелка<br>
-    <input type="radio" name="question_6" value="b">топката се предоставя за вкарване отвън на противниковия отбор и незабавно се сменя посоката на индикаторната стрелка<br>
-    <input type="radio" name="question_6" value="c">дава се възможност на отбора, извършил грешката, да преповтори вкарването на топката, като се сменя и посоката на индикаторната стрелка<br>
-    <input type="radio" name="question_6" value="d">дава се възможност на отбора, извършил грешката, да преповтори вкарването на топката, без да се сменя посоката на индикаторната стрелка<br>
-    7. За позволено докосване на топката се счита<br>
-    <input type="radio" name="question_7" value="a">умишлено избиване с юмрук<br>
-    <input type="radio" name="question_7" value="b">умишлено изритване на топката с крак<br>
-    <input type="radio" name="question_7" value="c">случайно съприкосновение с коя да е част от крака<br>
-    <input type="radio" name="question_7" value="d">блокиране с коя да е част от крака<br>
-    8. При желание за смяна от кой да е от отборите, тя трябва:<br>
-    <input type="radio" name="question_8" value="a">от треньора<br>
-    <input type="radio" name="question_8" value="b">от помощник-треньора<br>
-    <input type="radio" name="question_8" value="c">от капитана на отбора<br>
-    <input type="radio" name="question_8" value="d">да бъде поискана от играча, който ще влезе от скамейката<br>
-</div>
-<script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
-<script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script>
-<script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="https://bootswatch.com/_assets/js/custom.js"></script>
+    <div class="question">
+        1. Колко състезатели точно трябва да са на игралното поле по време на игра за всеки отбор?<br>
+        <input type="radio" name="question_1" value="a">5<br>
+        <input type="radio" name="question_1" value="b">6<br>
+        <input type="radio" name="question_1" value="c">4<br>
+    </div>
+    <div class="question">
+        2. При нараняване на състезател, съдиите:<br>
+        <input type="radio" name="question_2" value="a">задължително трябва да прекъснат играта<br>
+        <input type="radio" name="question_2" value="b">трябва да се въздържат от прекъсване на игра при "жива" топка,
+        освен ако не трябва да се предпази наранен състезател<br>
+        <input type="radio" name="question_2" value="c">при никакви обстоятелства не трябва да прекъсват играта<br>
+    </div>
+    <div class="question">
+        3. Треньорът трябва да представи списък с имената на участниците в срещата и капитана най-малко:<br>
+        <input type="radio" name="question_3" value="a">1 минута преди началото на срещата<br>
+        <input type="radio" name="question_3" value="b">5 минути преди началото на срещата<br>
+        <input type="radio" name="question_3" value="c">20 минути преди началото на срещата<br>
+    </div>
+    <div class="question">
+        4. Топката има статут на "жива", когато:<br>
+        <input type="radio" name="question_4" value="a">по време на спорната топка напусне ръцете на старши съдията при
+        подхвърлянет о й<br>
+        <input type="radio" name="question_4" value="b">при изпълнение на наказателен удар топката е на разположение на
+        изпълнителя на наказател ния удар<br>
+        <input type="radio" name="question_4" value="c">при вкарване в игра отвън топката е на разположение на
+        състезателя, който ще я вкара в игра<br>
+        <input type="radio" name="question_4" value="d">и трите отговора са верни<br>
+    </div>
+    <div class="question">
+        5. Когато топката докосне съдията, се отсъжда:<br>
+        <input type="radio" name="question_5" value="a">зависи от това коя част от пода е докосвал съдията в момента на
+        допир с топката<br>
+        <input type="radio" name="question_5" value="b">напускане на очертанията<br>
+        <input type="radio" name="question_5" value="c">нищо не се отсъжда - играта продължава<br>
+    </div>
+    <div class="question">
+        6. При извършване на грешка при вкарване на топката алтернативно в игра отвън:<br>
+        <input type="radio" name="question_6" value="a">топката се предоставя за вкарване отвън на противниковия отбор,
+        без да се сменя посоката на индикаторната стрелка<br>
+        <input type="radio" name="question_6" value="b">топката се предоставя за вкарване отвън на противниковия отбор и
+        незабавно се сменя посоката на индикаторната стрелка<br>
+        <input type="radio" name="question_6" value="c">дава се възможност на отбора, извършил грешката, да преповтори
+        вкарването на топката, като се сменя и посоката на индикаторната стрелка<br>
+        <input type="radio" name="question_6" value="d">дава се възможност на отбора, извършил грешката, да преповтори
+        вкарването на топката, без да се сменя посоката на индикаторната стрелка<br>
+    </div>
+    <div class="question">
+        7. За позволено докосване на топката се счита<br>
+        <input type="radio" name="question_7" value="a">умишлено избиване с юмрук<br>
+        <input type="radio" name="question_7" value="b">умишлено изритване на топката с крак<br>
+        <input type="radio" name="question_7" value="c">случайно съприкосновение с коя да е част от крака<br>
+        <input type="radio" name="question_7" value="d">блокиране с коя да е част от крака<br>
+    </div>
+    <div class="question">
+        8. При желание за смяна от кой да е от отборите, тя трябва:<br>
+        <input type="radio" name="question_8" value="a">от треньора<br>
+        <input type="radio" name="question_8" value="b">от помощник-треньора<br>
+        <input type="radio" name="question_8" value="c">от капитана на отбора<br>
+        <input type="radio" name="question_8" value="d">да бъде поискана от играча, който ще влезе от скамейката<br>
+    </div>
+    <script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
+    <script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script>
+    <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://bootswatch.com/_assets/js/custom.js"></script>
 </body>
 
 </html>
