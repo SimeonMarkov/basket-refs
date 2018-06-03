@@ -76,12 +76,6 @@ div.faq {
     margin-top: 50px;
 }
 
-.wrong {
-    color: red;
-    padding: 5px;
-}
-
-.right {
-    color: lightgreen;
-    padding: 5px;
+.lead {
+    width: 600px;
 }
