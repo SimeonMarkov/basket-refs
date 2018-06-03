@@ -75,3 +75,13 @@ div.faq {
 .question {
     margin-top: 50px;
 }
+
+.wrong {
+    color: red;
+    padding: 5px;
+}
+
+.right {
+    color: lightgreen;
+    padding: 5px;
+}
