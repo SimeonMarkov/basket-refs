@@ -41,7 +41,7 @@
 
 #data-list div {
     margin-left: 10px;
-    width: 600px;
+    max-width: 600px;
 }
 
 .data-list-item {
