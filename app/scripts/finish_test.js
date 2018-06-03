@@ -18,13 +18,13 @@ function showAnswers(test) {
                 questionsNumber++;
                 for (var i = 0, length = answers.length; i < length; i++) {
                     if(answers[i].value === v) {
-                        console.log(answers[i]);
-                        $(answers[i]).after('<span class="right">right</span>');
+                        console.log($(answers[i]).closest("span"));
+                        $(answers[i]).closest("span").after('<img src="./resources/right.png" width="20px" height="20px"/>');
                         if(answers[i].checked) {
                             correctlyAnsweredCount++;
                         }
                     } else if(answers[i].checked){
-                        $(answers[i]).after('<span class="wrong">wrong</span>');
+                        $(answers[i]).closest("span").after('<img src="./resources/wrong.png" width="20px" height="20px"/>');
                     }
                 }
                 if(correctlyAnsweredCount/questionsNumber >= 0.5) {
