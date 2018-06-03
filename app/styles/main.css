@@ -60,3 +60,8 @@ p.faq {
 div.faq {
     margin-bottom: 50px;
 }
+
+#test_result {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
