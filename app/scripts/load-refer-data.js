@@ -110,8 +110,10 @@
         $(this).next().toggleClass('hidden');
     });
 
+    var hidden = false;
     $('#toggle-btn').click(function (ev) {
         ev.preventDefault()
-        $('.data-list-items').toggleClass('hidden');
+        hidden ? $('.data-list-items').removeClass('hidden') : $('.data-list-items').addClass('hidden');
+        hidden = !hidden;
     });
 })();
