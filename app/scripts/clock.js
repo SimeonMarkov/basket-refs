@@ -1,6 +1,6 @@
 var timeLeft;
 
-function startCountDown(time) { // Set the date we're counting down to
+function startCountDown(time, test) { // Set the date we're counting down to
 
     $(document).on("keydown", disableF5);
     document.getElementById("test-start-warning").style.display = 'none';
@@ -30,7 +30,7 @@ function startCountDown(time) { // Set the date we're counting down to
             clearInterval(timeLeft);
             document.getElementById("countdown").innerHTML = "";
             alert("Expired");
-            showAnswers();
+            showAnswers(test);
         }
     }, 1000);
 }
