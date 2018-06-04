@@ -29,7 +29,7 @@ function startCountDown(time, test) { // Set the date we're counting down to
         if (distance < 0) {
             clearInterval(timeLeft);
             document.getElementById("countdown").innerHTML = "";
-            alert("Expired");
+            alert("Времето Ви изтече!");
             showAnswers(test);
         }
     }, 1000);
