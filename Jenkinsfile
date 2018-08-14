@@ -1,3 +1,7 @@
 node {
-     checkout scm
+     stages{
+         stage('Git checkout') {
+             checkout scm
+         }
+     }
 }
