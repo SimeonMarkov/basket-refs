@@ -3,9 +3,11 @@ pipeline {
 
     stages {
         stage('Git checkout') {
-            steps {
-               checkout scm
-            }
+            checkout scm
+        }
+
+        stage('Build') {
+            sh 'gradle clean build'
         }
     }
 }
